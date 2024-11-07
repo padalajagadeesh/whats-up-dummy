@@ -1,0 +1,55 @@
+<div class="right-container w-100">
+    <!--header -->
+    <div class="header d-flex justify-content-between align-items-center px-sm-3 p-2">
+      <div class="img-text d-flex gap-2">
+        <div class="user-img ">
+          <img class="dp rounded-5"
+            src="https://images.pexels.com/photos/2474307/pexels-photo-2474307.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            width="43px" height="43px" alt="">
+        </div>
+        <div class="user-info">
+          <p class="p-0 m-0">{{selectUser}}</p>
+          <p class="status">“How are you?”</p>
+        </div>
+      </div>
+      <div class="nav-icons d-flex gap-5 fs-5">
+        <li><i class="fa-solid fa-video"></i></li>
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+      </div>
+    </div>
+
+    <!--chat-container -->
+    <div class="chat-container">
+      <div class="chat-bg"></div>
+      <div class="message-box my-message d-flex justify-content-end">
+        <p class="d-flex flex-column">I've been waiting to see that show asap!<br><span>07:43</span></p>
+        <span class="triangle"></span>
+      </div>
+      <div class="message-box friend-message">
+        <p>Ahh, I can't believe you do too!<br><span>07:45</span></p>
+      </div>
+    </div>
+
+    <!--input-bottom -->
+    <div class="chatbox-input d-flex align-items-center">
+      <i class="fa-solid fa-plus fs-5"></i>
+      <div class="emoj_sticker w-100">
+        <i class="fa-regular fa-face-smile"></i>
+        <input type="text" class="col-10 border-0 rounded-1" placeholder="Type a message">
+      </div>
+      <i class="fa-solid fa-microphone fs-4"></i>
+    </div>
+  </div>
+
+
+  <div class="Nodata min-vh-100" *ngIf="!UserChatDetails">
+    <div>
+      <img src="https://static.whatsapp.net/rsrc.php/v3/yX/r/dJq9qKG5lDb.png" width="320" alt="">
+      <p class="DownloadWindow">Download WhatsApp for Windows</p>
+      <p class="content">Make calls, share your screen and get a faster experience when you download the Windows
+        app.</p>
+      <button>Get from Microsoft Store</button>
+      <p class="content"><i class="fa-solid fa-lock"></i> Your personal messages are end-to-end encrypted</p>
+    </div>
+  </div>

@@ -1,0 +1,124 @@
+.right-container {
+    width: 100%;
+    background: #efeae2;
+    .header {
+      background-color: #f0f2f5;
+
+      .nav-icons {
+        color: #a2acb2;
+
+        li {
+          list-style-type: none;
+        }
+      }
+
+      .user-info {
+        .status {
+          font-size: 12px;
+        }
+      }
+    }
+    .chat-container {
+      position: relative;
+      width: 100%;
+      background-image: url('/assets/images/wtsup-bg.png');
+      padding: 50px;
+      overflow-y: auto;
+      height: calc(100% - 114px);
+      .my-message {
+        opacity: 0.9;
+
+        p {
+          direction: rtl;
+          background-color: #d9fdd3;
+          border-radius: 10px 0 10px 10px;
+          padding: 10px;
+        }
+
+        .triangle {
+          width: 0px;
+          height: 0px;
+          border-style: solid;
+          border-width: 10px 10px 0 0;
+          border-color: #d9fdd3 transparent transparent transparent;
+          transform: rotate(0deg);
+
+        }
+      }
+
+      .friend-message {
+        position: relative;
+        width: fit-content;
+        p {
+          background: #ffff;
+          direction: rtl;
+          border-radius: 0 10px 10px 10px;
+          padding: 10px;
+        }
+        .triangle {
+          position: absolute;
+          top: 0%;
+          left: -7px;
+          width: 0px;
+          height: 0px;
+          border-style: solid;
+          border-width: 10px 10px 0 0;
+          border-color: #ffffff transparent transparent transparent;
+          transform: rotate(90deg);
+
+        }
+      }
+    }
+    .chatbox-input{
+      padding: 8px 20px;
+      background: #f0f2f5;
+      color: #54656f;
+      
+      .emoj_sticker{
+        position: relative;
+        margin-left: 25px;
+        svg{
+          position: absolute;
+          top: 11px;
+          left: 11px;
+        }
+        input{
+          width: calc(100% - 14px);
+          padding: 9px 35px;
+        }
+      }
+    }
+  }
+
+  .Nodata {
+    width: 100%;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: 45%;
+    }
+
+    .DownloadWindow {
+      font-size: 30px;
+      font-family: math;
+      margin: 5px;
+      color: #7c8a90;
+    }
+
+    .content {
+      color: #7c8a90;
+      margin: 5px;
+    }
+
+    button {
+      padding: 8px 15px;
+      border-radius: 25px;
+      background: #008069;
+      color: #fff;
+      border: 0;
+    }
+  }
